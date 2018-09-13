@@ -89,7 +89,7 @@ resource "azurerm_network_security_rule" "AllowSSH" {
     resource_group_name         = "${azurerm_resource_group.nsgs.name}"
     network_security_group_name = "${azurerm_network_security_group.resource_group_default.name}"
 
-    priority                    = 1001
+    priority                    = 1010
     access                      = "Allow"
     direction                   = "Inbound"
     protocol                    = "Tcp"
@@ -104,7 +104,7 @@ resource "azurerm_network_security_rule" "AllowHTTP" {
     resource_group_name         = "${azurerm_resource_group.nsgs.name}"
     network_security_group_name = "${azurerm_network_security_group.resource_group_default.name}"
 
-    priority                    = 1001
+    priority                    = 1020
     access                      = "Allow"
     direction                   = "Inbound"
     protocol                    = "Tcp"
@@ -120,7 +120,7 @@ resource "azurerm_network_security_rule" "AllowHTTPS" {
     resource_group_name         = "${azurerm_resource_group.nsgs.name}"
     network_security_group_name = "${azurerm_network_security_group.resource_group_default.name}"
 
-    priority                    = 1001
+    priority                    = 1021
     access                      = "Allow"
     direction                   = "Inbound"
     protocol                    = "Tcp"
@@ -135,7 +135,7 @@ resource "azurerm_network_security_rule" "AllowSQLServer" {
     resource_group_name         = "${azurerm_resource_group.nsgs.name}"
     network_security_group_name = "${azurerm_network_security_group.resource_group_default.name}"
 
-    priority                    = 1001
+    priority                    = 1030
     access                      = "Allow"
     direction                   = "Inbound"
     protocol                    = "Tcp"
@@ -150,7 +150,7 @@ resource "azurerm_network_security_rule" "AllowRDP" {
     resource_group_name         = "${azurerm_resource_group.nsgs.name}"
     network_security_group_name = "${azurerm_network_security_group.resource_group_default.name}"
 
-    priority                    = 1001
+    priority                    = 1040
     access                      = "Allow"
     direction                   = "Inbound"
     protocol                    = "Tcp"
