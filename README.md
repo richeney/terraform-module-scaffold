@@ -1,3 +1,3 @@
-# terraform-modules
+# terraform-module-scaffold
 
-Modules used by lab7 of https://aka.ms/citadel/terraform
+Module used by lab7 of https://aka.ms/citadel/terraform
